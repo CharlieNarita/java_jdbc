@@ -6,7 +6,6 @@ import com.charlie.daodemo.domain.Actor;
 import com.charlie.daodemo.domain.Goods;
 import org.junit.jupiter.api.Test;
 
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -56,7 +55,7 @@ public class TestDAO {
 
         //query
         String sql2 = "select * from goods where id=?";
-        Object o = goodsDAO.querySingle(sql2, Goods.class,1);
-        System.out.println(o);
+        Goods good = goodsDAO.querySingle(sql2, Goods.class,1);
+        System.out.println(good);
     }
 }
