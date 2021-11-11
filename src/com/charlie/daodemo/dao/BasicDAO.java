@@ -78,13 +78,12 @@ public class BasicDAO<T> {  //use generic
     }
 
     /**
-     *
-     * @param sql   sql terms
+     * @param sql        sql terms
      * @param parameters pass ? value
      * @return return Object which represent the value
      */
     //query single row and single column, return single value
-    public Object queryScalar(String sql, Object...parameters) {
+    public Object queryScalar(String sql, Object... parameters) {
         Connection connection = null;
 
         try {
@@ -96,7 +95,6 @@ public class BasicDAO<T> {  //use generic
             JDBCUtilsByDruid.closeResource(null, null, connection);
         }
     }
-
 
 
 }

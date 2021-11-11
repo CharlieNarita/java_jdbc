@@ -4,7 +4,7 @@ package com.charlie.jdbc.myjdbc;
  * @author AC
  * @version 1.0
  */
-public class MyJDBCImpl implements JDBCInterface{
+public class MyJDBCImpl implements JDBCInterface {
     @Override
     public Object getConnection() {
         return "get the SQL database connection";

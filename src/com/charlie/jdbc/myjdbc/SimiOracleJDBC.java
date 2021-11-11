@@ -4,7 +4,7 @@ package com.charlie.jdbc.myjdbc;
  * @author AC
  * @version 1.0
  */
-public class SimiOracleJDBC implements JDBCInterface{
+public class SimiOracleJDBC implements JDBCInterface {
     @Override
     public Object getConnection() {
         return "Oracle DataBase connection OK";

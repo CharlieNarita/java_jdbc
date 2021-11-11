@@ -14,9 +14,11 @@ import java.sql.PreparedStatement;
 
 public class BatchTest {
     //batch way to add 5000 rows data into table admin2
+
     /**
      * add all sql into batch package to execute all
      * the batch similar like a buffer zone to store sql terms
+     *
      * @throws Exception
      */
     @Test
@@ -60,7 +62,7 @@ public class BatchTest {
         }
 
         long end = System.currentTimeMillis();
-        System.out.println("Batch way to execute sql cost time = " + (end-start));
+        System.out.println("Batch way to execute sql cost time = " + (end - start));
 
         JDBCUtils.closeResources(null, preparedStatement, connection);
 

@@ -9,7 +9,8 @@ public class Goods {
     private String goods_name;
     private Double price;
 
-    public Goods() {}
+    public Goods() {
+    }
 
     public Goods(Integer id, String goods_name, Double price) {
         this.id = id;

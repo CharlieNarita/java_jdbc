@@ -31,7 +31,7 @@ public class JDBCUtilsApply {
         try {
             connection = JDBCUtils.getConnection();
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1,1);
+            preparedStatement.setInt(1, 1);
             resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {

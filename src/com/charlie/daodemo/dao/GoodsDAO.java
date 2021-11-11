@@ -6,5 +6,5 @@ import com.charlie.daodemo.domain.Goods;
  * @author AC
  * @version 1.0
  */
-public class GoodsDAO extends BasicDAO<Goods>{
+public class GoodsDAO extends BasicDAO<Goods> {
 }

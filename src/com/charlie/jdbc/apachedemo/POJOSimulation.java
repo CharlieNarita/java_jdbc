@@ -16,7 +16,7 @@ public class POJOSimulation {
         ArrayList<Actor> actors = new POJOSimulation().selectToArrayList();
         Iterator<Actor> iterator = actors.iterator();
         while (iterator.hasNext()) {
-            Actor next =  iterator.next();
+            Actor next = iterator.next();
             System.out.println(next);
         }
     }
@@ -39,7 +39,7 @@ public class POJOSimulation {
             System.out.println(connection.getClass());
             preparedStatement = connection.prepareStatement(sql);
             resultSet = preparedStatement.executeQuery();
-            while(resultSet.next()) {
+            while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
                 String gender = resultSet.getString("gender");

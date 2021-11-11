@@ -9,6 +9,7 @@ import java.util.Properties;
 
 /**
  * do some simple operation
+ *
  * @author AC
  * @version 1.0
  */
@@ -20,7 +21,7 @@ public class JdbcDriver {
         //2.get connection, it is socket connection actually
         String url = "jdbc:mysql://localhost:3306/jdbc_test";
         Properties properties = new Properties();
-        properties.setProperty("user","root"); //user
+        properties.setProperty("user", "root"); //user
         properties.setProperty("password", "12345"); //password
 
         Connection connect = driver.connect(url, properties);

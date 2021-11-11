@@ -14,7 +14,7 @@ import java.util.Properties;
  */
 public class DruidDemo {
     @Test
-    public void testDruid() throws Exception{
+    public void testDruid() throws Exception {
         Properties properties = new Properties();
         properties.load(new FileInputStream("src\\druid.properties"));
         String user = properties.getProperty("user");
@@ -32,6 +32,6 @@ public class DruidDemo {
             connection.close();
         }
         long end = System.currentTimeMillis();
-        System.out.println("druid cost time=" + (end-start));
+        System.out.println("druid cost time=" + (end - start));
     }
 }

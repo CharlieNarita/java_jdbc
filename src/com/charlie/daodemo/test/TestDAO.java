@@ -17,7 +17,6 @@ public class TestDAO {
 
     }
 
-
     @Test
     public void testActorDAO() {
         ActorDAO actorDAO = new ActorDAO();
@@ -38,7 +37,7 @@ public class TestDAO {
 
         //query scalar
         String sql3 = "select name from actor where id=?";
-        Object o = actorDAO.queryScalar(sql3,  2);
+        Object o = actorDAO.queryScalar(sql3, 2);
         System.out.println("\nscalar query result: ");
         System.out.println(o);
 
@@ -55,7 +54,7 @@ public class TestDAO {
 
         //query
         String sql2 = "select * from goods where id=?";
-        Goods good = goodsDAO.querySingle(sql2, Goods.class,1);
+        Goods good = goodsDAO.querySingle(sql2, Goods.class, 1);
         System.out.println(good);
     }
 }

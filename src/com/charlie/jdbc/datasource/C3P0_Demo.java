@@ -50,7 +50,7 @@ public class C3P0_Demo {
             connection.close();
         }
         long end = System.currentTimeMillis();
-        System.out.println("combo pool connection cost time = " + (end-start));
+        System.out.println("combo pool connection cost time = " + (end - start));
     }
 
     /**

@@ -9,6 +9,6 @@ import java.util.List;
  * @version 1.0
  * ActorDao extends BasicDAO so that has all methods from BasicDAO
  */
-public class ActorDAO extends BasicDAO<Actor>{
+public class ActorDAO extends BasicDAO<Actor> {
 
 }

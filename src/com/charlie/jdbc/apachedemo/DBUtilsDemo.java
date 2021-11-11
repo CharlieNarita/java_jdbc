@@ -66,12 +66,12 @@ public class DBUtilsDemo {
         System.out.println("output the query object");
         System.out.println(actor);
 
-        JDBCUtilsByDruid.closeResources(null, null,connection);
+        JDBCUtilsByDruid.closeResources(null, null, connection);
     }
 
     //apache+dbutils + druid return single rows single column
     @Test
-    public void queryScalar() throws SQLException{
+    public void queryScalar() throws SQLException {
         Connection connection = JDBCUtilsByDruid.getConnection();
         QueryRunner queryRunner = new QueryRunner();
         String sql = "select name from actor where id=?";
@@ -96,7 +96,7 @@ public class DBUtilsDemo {
         int affectedRow =
                 queryRunner.update(connection, sql, "dog", "M", "1999-8-5", "136119");
 
-        System.out.println(affectedRow>0 ? "OK!" : "execution is not affect the table");
+        System.out.println(affectedRow > 0 ? "OK!" : "execution is not affect the table");
 
         JDBCUtilsByDruid.closeResources(null, null, connection);
     }

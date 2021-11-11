@@ -17,7 +17,7 @@ import java.util.Properties;
 public class JDBCUtilsByDruid {
     private static DataSource dataSource;
 
-    static{
+    static {
         Properties properties = new Properties();
 
         try {
@@ -38,13 +38,13 @@ public class JDBCUtilsByDruid {
 
     public static void closeResource(ResultSet resultSet, Statement statement, Connection connection) {
         try {
-            if(resultSet != null) {
+            if (resultSet != null) {
                 resultSet.close();
             }
-            if(statement != null) {
+            if (statement != null) {
                 statement.close();
             }
-            if(connection!= null) {
+            if (connection != null) {
                 connection.close();
             }
         } catch (SQLException e) {

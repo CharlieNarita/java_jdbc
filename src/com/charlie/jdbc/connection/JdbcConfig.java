@@ -7,11 +7,12 @@ import java.util.Properties;
 
 /**
  * config file is more flexible
+ *
  * @author AC
  * @version 1.0
  */
 public class JdbcConfig {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Properties properties = new Properties();
         properties.load(new FileInputStream("src\\mysql.properties"));
         String user = properties.getProperty("user");

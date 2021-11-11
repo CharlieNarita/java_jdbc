@@ -10,11 +10,12 @@ import java.util.Scanner;
 
 /**
  * demonstrate prepared statement
+ *
  * @author AC
  * @version 1.0
  */
 public class PreparedStatementDemo {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.print("please enter admin name:");
         String admin_name = scanner.nextLine();
@@ -53,7 +54,7 @@ public class PreparedStatementDemo {
         //attention: here executeQuery() has not parameter cause sql is already pass in
         ResultSet resultSet = preparedStatement.executeQuery();
 
-        if(resultSet.next()) {
+        if (resultSet.next()) {
             System.out.println("login ok");
         } else {
             System.out.println("login fail");

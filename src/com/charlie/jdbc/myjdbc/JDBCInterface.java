@@ -2,6 +2,7 @@ package com.charlie.jdbc.myjdbc;
 
 /**
  * define a interface
+ *
  * @author AC
  * @version 1.0
  */
